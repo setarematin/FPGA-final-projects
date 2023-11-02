@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator_isim_beh.exe" -prj "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator_beh.prj" "work.calculator" 

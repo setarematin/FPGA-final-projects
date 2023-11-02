@@ -1,0 +1,1623 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: clock.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "clock.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "clock"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-tqg144
+
+---- Source Options
+Top Module Name                    : clock
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" into library work
+Parsing entity <clock>.
+Parsing architecture <Behavioral> of entity <clock>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <clock> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 83: hour_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 108: alarm_hour should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 124: hour_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 169: hour_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 170: hour_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 171: minute_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 172: minute_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 173: second_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 174: second_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 229: hour_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 230: hour_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 231: minute_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 232: minute_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 233: second_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 234: second_entry should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd" Line 137: Assignment to input_digits ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <clock>.
+    Related source file is "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\clock\clock\clock\clock.vhd".
+        fclk = 10
+        alarm_duration = 60
+        init_hour = 10
+        init_minute = 10
+        init_second = 0
+        init_alarm_hour = 6
+        init_alarm_minute = 0
+        init_alarm_second = 0
+    Found 1-bit register for signal <clk_div>.
+    Found 6-bit register for signal <generating_time.cnt_alarm>.
+    Found 3-bit register for signal <pr_st>.
+    Found 3-bit register for signal <clock_divider.cnt>.
+    Found 1-bit register for signal <generating_time.second_temp<5>>.
+    Found 1-bit register for signal <generating_time.second_temp<4>>.
+    Found 1-bit register for signal <generating_time.second_temp<3>>.
+    Found 1-bit register for signal <generating_time.second_temp<2>>.
+    Found 1-bit register for signal <generating_time.second_temp<1>>.
+    Found 1-bit register for signal <generating_time.second_temp<0>>.
+    Found 1-bit register for signal <generating_time.minute_temp<5>>.
+    Found 1-bit register for signal <generating_time.minute_temp<4>>.
+    Found 1-bit register for signal <generating_time.minute_temp<3>>.
+    Found 1-bit register for signal <generating_time.minute_temp<2>>.
+    Found 1-bit register for signal <generating_time.minute_temp<1>>.
+    Found 1-bit register for signal <generating_time.minute_temp<0>>.
+    Found 1-bit register for signal <generating_time.hour_temp<4>>.
+    Found 1-bit register for signal <generating_time.hour_temp<3>>.
+    Found 1-bit register for signal <generating_time.hour_temp<2>>.
+    Found 1-bit register for signal <generating_time.hour_temp<1>>.
+    Found 1-bit register for signal <generating_time.hour_temp<0>>.
+    Found 3-bit adder for signal <clock_divider.cnt[2]_GND_5_o_add_1_OUT> created at line 66.
+    Found 6-bit adder for signal <generating_time.cnt_alarm[5]_GND_5_o_add_5_OUT> created at line 88.
+    Found 6-bit adder for signal <generating_time.second_temp[5]_GND_5_o_add_7_OUT> created at line 90.
+    Found 6-bit adder for signal <generating_time.minute_temp[5]_GND_5_o_add_9_OUT> created at line 93.
+    Found 5-bit adder for signal <generating_time.hour_temp[4]_GND_5_o_add_11_OUT> created at line 96.
+    Found 32-bit adder for signal <upper_section.d[31]_GND_5_o_add_175_OUT> created at line 240.
+    Found 8-bit adder for signal <n0557> created at line 242.
+    Found 6-bit adder for signal <upper_section.second_entry_temp[5]_GND_5_o_add_178_OUT> created at line 243.
+    Found 8-bit adder for signal <n0559> created at line 244.
+    Found 6-bit adder for signal <upper_section.minute_entry_temp[5]_GND_5_o_add_181_OUT> created at line 245.
+    Found 8-bit adder for signal <n0562> created at line 246.
+    Found 5-bit adder for signal <upper_section.hour_entry_temp[4]_GND_5_o_add_184_OUT> created at line 247.
+    Found 4x4-bit multiplier for signal <n0641> created at line 246.
+    Found 8x3-bit Read Only RAM for signal <_n1166>
+    Found 16x7-bit Read Only RAM for signal <_n1185>
+    Found 16x7-bit Read Only RAM for signal <_n1210>
+    Found 16x7-bit Read Only RAM for signal <_n1233>
+    Found 16x7-bit Read Only RAM for signal <_n1252>
+    Found 16x7-bit Read Only RAM for signal <_n1272>
+    Found 16x7-bit Read Only RAM for signal <_n1321>
+    Found 16x7-bit Read Only RAM for signal <_n1401>
+    Found 16x7-bit Read Only RAM for signal <_n1420>
+    Found 16x7-bit Read Only RAM for signal <_n1437>
+    Found 16x7-bit Read Only RAM for signal <_n1486>
+    Found 16x7-bit Read Only RAM for signal <_n1503>
+    Found 16x7-bit Read Only RAM for signal <_n1520>
+    Found 3-bit 5-to-1 multiplexer for signal <nx_st> created at line 143.
+    Found 1-bit 7-to-1 multiplexer for signal <pr_st[2]_PWR_101_o_Mux_416_o> created at line 143.
+    Found 1-bit 4-to-1 multiplexer for signal <pr_st[2]_X_5_o_Mux_419_o> created at line 143.
+    Found 1-bit 4-to-1 multiplexer for signal <pr_st[2]_X_5_o_Mux_417_o> created at line 143.
+WARNING:Xst:737 - Found 1-bit latch for signal <flag_alarm>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_hour<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_hour<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_hour<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_hour<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_hour<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_minute<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_minute<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_minute<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_minute<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_minute<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_minute<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_second<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_second<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_second<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_second<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_second<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alarm_second<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hd<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hd<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hd<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hd<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hd<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hd<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hd<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hy<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hy<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hy<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hy<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hy<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hy<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hy<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <md<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <md<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <md<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <md<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <md<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <md<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <md<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <my<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <my<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <my<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <my<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <my<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <my<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <my<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sd<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sd<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sd<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sd<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sd<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sd<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sd<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sy<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sy<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sy<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sy<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sy<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sy<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sy<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.d<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hour_entry<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hour_entry<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hour_entry<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hour_entry<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hour_entry<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <minute_entry<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <minute_entry<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <minute_entry<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <minute_entry<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <minute_entry<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <minute_entry<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <second_entry<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <second_entry<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <second_entry<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <second_entry<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <second_entry<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <second_entry<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.st_s<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.st_s<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.st_s<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.hour_entry_temp<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.hour_entry_temp<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.hour_entry_temp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.hour_entry_temp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.hour_entry_temp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.minute_entry_temp<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.minute_entry_temp<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.minute_entry_temp<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.minute_entry_temp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.minute_entry_temp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.minute_entry_temp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.second_entry_temp<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.second_entry_temp<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.second_entry_temp<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.second_entry_temp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.second_entry_temp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <upper_section.second_entry_temp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <flag_set_time>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <flag_alarm_cancel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <flag_set_alarm>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 5-bit comparator equal for signal <alarm_hour[4]_generating_time.hour_temp[4]_equal_29_o> created at line 108
+    Found 6-bit comparator equal for signal <alarm_minute[5]_generating_time.minute_temp[5]_equal_30_o> created at line 108
+    Found 6-bit comparator equal for signal <alarm_second[5]_generating_time.second_temp[5]_equal_31_o> created at line 108
+    Found 6-bit comparator greater for signal <flag_alarm_GND_5_o_MUX_29_o> created at line 112
+    Found 5-bit comparator greater for signal <hour[4]_GND_5_o_LessThan_40_o> created at line 147
+    Found 6-bit comparator greater for signal <minute[5]_GND_5_o_LessThan_46_o> created at line 149
+    Found 6-bit comparator greater for signal <second[5]_GND_5_o_LessThan_52_o> created at line 151
+    Found 32-bit comparator greater for signal <upper_section.d[31]_GND_5_o_LessThan_150_o> created at line 228
+    Found 5-bit comparator greater for signal <hour_entry[4]_GND_5_o_LessThan_151_o> created at line 229
+    Found 6-bit comparator greater for signal <minute_entry[5]_GND_5_o_LessThan_157_o> created at line 231
+    Found 6-bit comparator greater for signal <second_entry[5]_GND_5_o_LessThan_163_o> created at line 233
+    Found 4-bit comparator greater for signal <key_int[3]_PWR_5_o_LessThan_175_o> created at line 237
+    Found 6-bit comparator lessequal for signal <n0127> created at line 250
+    Found 6-bit comparator lessequal for signal <n0130> created at line 251
+    Found 5-bit comparator lessequal for signal <n0133> created at line 252
+    Summary:
+	inferred  13 RAM(s).
+	inferred   1 Multiplier(s).
+	inferred  12 Adder/Subtractor(s).
+	inferred  30 D-type flip-flop(s).
+	inferred 132 Latch(s).
+	inferred  15 Comparator(s).
+	inferred 299 Multiplexer(s).
+Unit <clock> synthesized.
+
+Synthesizing Unit <div_5u_4u>.
+    Related source file is "".
+    Found 9-bit adder for signal <n0133> created at line 0.
+    Found 9-bit adder for signal <GND_24_o_b[3]_add_1_OUT> created at line 0.
+    Found 8-bit adder for signal <n0137> created at line 0.
+    Found 8-bit adder for signal <GND_24_o_b[3]_add_3_OUT> created at line 0.
+    Found 7-bit adder for signal <n0141> created at line 0.
+    Found 7-bit adder for signal <GND_24_o_b[3]_add_5_OUT> created at line 0.
+    Found 6-bit adder for signal <n0145> created at line 0.
+    Found 6-bit adder for signal <GND_24_o_b[3]_add_7_OUT> created at line 0.
+    Found 5-bit adder for signal <n0149> created at line 0.
+    Found 5-bit adder for signal <a[4]_b[3]_add_9_OUT[4:0]> created at line 0.
+    Found 9-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  17 Multiplexer(s).
+Unit <div_5u_4u> synthesized.
+
+Synthesizing Unit <mod_5u_4u>.
+    Related source file is "".
+    Found 9-bit adder for signal <n0133> created at line 0.
+    Found 9-bit adder for signal <GND_25_o_b[3]_add_1_OUT> created at line 0.
+    Found 8-bit adder for signal <n0137> created at line 0.
+    Found 8-bit adder for signal <GND_25_o_b[3]_add_3_OUT> created at line 0.
+    Found 7-bit adder for signal <n0141> created at line 0.
+    Found 7-bit adder for signal <GND_25_o_b[3]_add_5_OUT> created at line 0.
+    Found 6-bit adder for signal <n0145> created at line 0.
+    Found 6-bit adder for signal <GND_25_o_b[3]_add_7_OUT> created at line 0.
+    Found 5-bit adder for signal <n0149> created at line 0.
+    Found 5-bit adder for signal <a[4]_b[3]_add_9_OUT> created at line 0.
+    Found 5-bit adder for signal <n0153> created at line 0.
+    Found 5-bit adder for signal <a[4]_GND_25_o_add_11_OUT> created at line 0.
+    Found 9-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Summary:
+	inferred  12 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  26 Multiplexer(s).
+Unit <mod_5u_4u> synthesized.
+
+Synthesizing Unit <div_6u_4u>.
+    Related source file is "".
+    Found 10-bit adder for signal <n0165> created at line 0.
+    Found 10-bit adder for signal <GND_26_o_b[3]_add_1_OUT> created at line 0.
+    Found 9-bit adder for signal <n0169> created at line 0.
+    Found 9-bit adder for signal <GND_26_o_b[3]_add_3_OUT> created at line 0.
+    Found 8-bit adder for signal <n0173> created at line 0.
+    Found 8-bit adder for signal <GND_26_o_b[3]_add_5_OUT> created at line 0.
+    Found 7-bit adder for signal <n0177> created at line 0.
+    Found 7-bit adder for signal <GND_26_o_b[3]_add_7_OUT> created at line 0.
+    Found 6-bit adder for signal <n0181> created at line 0.
+    Found 6-bit adder for signal <a[5]_b[3]_add_9_OUT[5:0]> created at line 0.
+    Found 6-bit adder for signal <n0185> created at line 0.
+    Found 6-bit adder for signal <a[5]_GND_26_o_add_11_OUT[5:0]> created at line 0.
+    Found 10-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Summary:
+	inferred  12 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+	inferred  21 Multiplexer(s).
+Unit <div_6u_4u> synthesized.
+
+Synthesizing Unit <mod_6u_4u>.
+    Related source file is "".
+    Found 10-bit adder for signal <n0165> created at line 0.
+    Found 10-bit adder for signal <GND_27_o_b[3]_add_1_OUT> created at line 0.
+    Found 9-bit adder for signal <n0169> created at line 0.
+    Found 9-bit adder for signal <GND_27_o_b[3]_add_3_OUT> created at line 0.
+    Found 8-bit adder for signal <n0173> created at line 0.
+    Found 8-bit adder for signal <GND_27_o_b[3]_add_5_OUT> created at line 0.
+    Found 7-bit adder for signal <n0177> created at line 0.
+    Found 7-bit adder for signal <GND_27_o_b[3]_add_7_OUT> created at line 0.
+    Found 6-bit adder for signal <n0181> created at line 0.
+    Found 6-bit adder for signal <a[5]_b[3]_add_9_OUT> created at line 0.
+    Found 6-bit adder for signal <n0185> created at line 0.
+    Found 6-bit adder for signal <a[5]_GND_27_o_add_11_OUT> created at line 0.
+    Found 6-bit adder for signal <n0189> created at line 0.
+    Found 6-bit adder for signal <a[5]_GND_27_o_add_13_OUT> created at line 0.
+    Found 10-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Summary:
+	inferred  14 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+	inferred  37 Multiplexer(s).
+Unit <mod_6u_4u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 13
+ 16x7-bit single-port Read Only RAM                    : 12
+ 8x3-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 1
+ 4x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 160
+ 10-bit adder                                          : 16
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 5-bit adder                                           : 14
+ 6-bit adder                                           : 53
+ 7-bit adder                                           : 24
+ 8-bit adder                                           : 27
+ 9-bit adder                                           : 24
+# Registers                                            : 21
+ 1-bit register                                        : 18
+ 3-bit register                                        : 2
+ 6-bit register                                        : 1
+# Latches                                              : 132
+ 1-bit latch                                           : 132
+# Comparators                                          : 95
+ 10-bit comparator lessequal                           : 8
+ 32-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 1
+ 5-bit comparator equal                                : 1
+ 5-bit comparator greater                              : 2
+ 5-bit comparator lessequal                            : 9
+ 6-bit comparator equal                                : 2
+ 6-bit comparator greater                              : 5
+ 6-bit comparator lessequal                            : 30
+ 7-bit comparator lessequal                            : 12
+ 8-bit comparator lessequal                            : 12
+ 9-bit comparator lessequal                            : 12
+# Multiplexers                                         : 617
+ 1-bit 2-to-1 multiplexer                              : 561
+ 1-bit 4-to-1 multiplexer                              : 2
+ 1-bit 7-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 5
+ 3-bit 5-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 6
+ 5-bit 2-to-1 multiplexer                              : 13
+ 6-bit 2-to-1 multiplexer                              : 28
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <upper_section.st_s_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <clock>.
+The following registers are absorbed into counter <clock_divider.cnt>: 1 register on signal <clock_divider.cnt>.
+The following registers are absorbed into counter <generating_time.cnt_alarm>: 1 register on signal <generating_time.cnt_alarm>.
+INFO:Xst:3231 - The small RAM <Mram__n1166> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 3-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <pr_st>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1252> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0524>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1185> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <second[5]_PWR_5_o_mod_55_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1233> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0519>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1272> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <minute[5]_PWR_5_o_mod_49_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1401> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0514>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1210> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hour[4]_PWR_5_o_mod_43_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1437> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0541>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1486> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hour_entry[4]_PWR_5_o_mod_154_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1503> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0546>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1520> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <minute_entry[5]_PWR_5_o_mod_160_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1321> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0551>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1420> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <second_entry[5]_PWR_5_o_mod_166_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <clock> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 13
+ 16x7-bit single-port distributed Read Only RAM        : 12
+ 8x3-bit single-port distributed Read Only RAM         : 1
+# Multipliers                                          : 1
+ 4x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 85
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 4-bit adder carry in                                  : 6
+ 5-bit adder                                           : 3
+ 5-bit adder carry in                                  : 20
+ 6-bit adder                                           : 6
+ 6-bit adder carry in                                  : 48
+# Counters                                             : 2
+ 3-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+# Comparators                                          : 95
+ 10-bit comparator lessequal                           : 8
+ 32-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 1
+ 5-bit comparator equal                                : 1
+ 5-bit comparator greater                              : 2
+ 5-bit comparator lessequal                            : 9
+ 6-bit comparator equal                                : 2
+ 6-bit comparator greater                              : 5
+ 6-bit comparator lessequal                            : 30
+ 7-bit comparator lessequal                            : 12
+ 8-bit comparator lessequal                            : 12
+ 9-bit comparator lessequal                            : 12
+# Multiplexers                                         : 533
+ 1-bit 2-to-1 multiplexer                              : 477
+ 1-bit 4-to-1 multiplexer                              : 2
+ 1-bit 7-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 5
+ 3-bit 5-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 6
+ 5-bit 2-to-1 multiplexer                              : 13
+ 6-bit 2-to-1 multiplexer                              : 28
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <upper_section.st_s_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    generating_time.hour_temp_4 in unit <clock>
+    generating_time.minute_temp_5 in unit <clock>
+    generating_time.second_temp_5 in unit <clock>
+    generating_time.hour_temp_0 in unit <clock>
+    generating_time.hour_temp_1 in unit <clock>
+    generating_time.hour_temp_2 in unit <clock>
+    generating_time.hour_temp_3 in unit <clock>
+    generating_time.minute_temp_0 in unit <clock>
+    generating_time.minute_temp_1 in unit <clock>
+    generating_time.minute_temp_3 in unit <clock>
+    generating_time.minute_temp_4 in unit <clock>
+    generating_time.minute_temp_2 in unit <clock>
+    generating_time.second_temp_0 in unit <clock>
+    generating_time.second_temp_1 in unit <clock>
+    generating_time.second_temp_2 in unit <clock>
+    generating_time.second_temp_3 in unit <clock>
+    generating_time.second_temp_4 in unit <clock>
+
+
+Optimizing unit <clock> ...
+INFO:Xst:2261 - The FF/Latch <hd_6> in Unit <clock> is equivalent to the following FF/Latch, which will be removed : <hd_3> 
+WARNING:Xst:1710 - FF/Latch <hd_1> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <hd_6> in Unit <clock> is equivalent to the following FF/Latch, which will be removed : <hd_0> 
+INFO:Xst:2261 - The FF/Latch <sd_6> in Unit <clock> is equivalent to the following FF/Latch, which will be removed : <sd_3> 
+WARNING:Xst:1710 - FF/Latch <hd_1> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <hd_6> in Unit <clock> is equivalent to the following FF/Latch, which will be removed : <hd_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block clock, actual ratio is 26.
+Latch hd_6 has been replicated 2 time(s) to handle iob=true attribute.
+Latch sd_6 has been replicated 1 time(s) to handle iob=true attribute.
+Latch flag_alarm has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 47
+ Flip-Flops                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : clock.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 587
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 31
+#      LUT2                        : 55
+#      LUT3                        : 77
+#      LUT4                        : 41
+#      LUT5                        : 87
+#      LUT6                        : 205
+#      MUXCY                       : 38
+#      MUXF7                       : 15
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 195
+#      FD                          : 3
+#      FDC                         : 17
+#      FDCE                        : 6
+#      FDE                         : 1
+#      FDP                         : 17
+#      FDR                         : 3
+#      LD                          : 131
+#      LDC                         : 13
+#      LDP                         : 4
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 47
+#      IBUF                        : 4
+#      OBUF                        : 43
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             153  out of   4800     3%  
+ Number of Slice LUTs:                  500  out of   2400    20%  
+    Number used as Logic:               500  out of   2400    20%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    551
+   Number with an unused Flip Flop:     398  out of    551    72%  
+   Number with an unused LUT:            51  out of    551     9%  
+   Number of fully used LUT-FF pairs:   102  out of    551    18%  
+   Number of unique control sets:        66
+
+IO Utilization: 
+ Number of IOs:                          48
+ Number of bonded IOBs:                  48  out of    102    47%  
+    IOB Flip Flops/Latches:              42
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------+--------------------------------------------+-------+
+Clock Signal                                                                       | Clock buffer(FF name)                      | Load  |
+-----------------------------------------------------------------------------------+--------------------------------------------+-------+
+clk                                                                                | BUFGP                                      | 7     |
+pr_st[2]_PWR_101_o_Mux_416_o(Mmux_pr_st[2]_PWR_101_o_Mux_416_o13:O)                | NONE(*)(upper_section.st_s_0)              | 2     |
+pr_st[2]_PWR_106_o_Mux_426_o(pr_st[2]_PWR_106_o_Mux_426_o:O)                       | NONE(*)(upper_section.hour_entry_temp_3)   | 5     |
+pr_st[2]_PWR_157_o_Mux_528_o(Mmux_pr_st[2]_PWR_157_o_Mux_528_o11:O)                | NONE(*)(flag_set_alarm)                    | 1     |
+pr_st[2]_PWR_52_o_Mux_318_o(Mmux_pr_st[2]_PWR_52_o_Mux_318_o11:O)                  | BUFG(*)(upper_section.d_31)                | 49    |
+pr_st[2]_PWR_155_o_Mux_524_o(Mmux_pr_st[2]_PWR_155_o_Mux_524_o11:O)                | NONE(*)(flag_set_time)                     | 1     |
+pr_st[2]_PWR_156_o_Mux_526_o(Mmux_pr_st[2]_PWR_156_o_Mux_526_o11:O)                | NONE(*)(flag_alarm_cancel)                 | 1     |
+flag_alarm_cancel_PWR_5_o_MUX_30_o(flag_alarm_cancel_PWR_5_o_MUX_30_o8:O)          | NONE(*)(flag_alarm)                        | 2     |
+pr_st[2]_PWR_10_o_Mux_234_o(Mmux_pr_st[2]_PWR_10_o_Mux_234_o11:O)                  | BUFG(*)(hd_6)                              | 41    |
+pr_st[2]_PWR_121_o_Mux_456_o(pr_st[2]_PWR_121_o_Mux_456_o:O)                       | NONE(*)(upper_section.minute_entry_temp_5) | 6     |
+pr_st[2]_PWR_139_o_Mux_492_o(pr_st[2]_PWR_139_o_Mux_492_o:O)                       | NONE(*)(upper_section.second_entry_temp_3) | 6     |
+flag_set_alarm                                                                     | NONE(alarm_hour_4)                         | 17    |
+clk_div                                                                            | BUFG                                       | 40    |
+flag_set_time_second_entry[4]_AND_82_o(flag_set_time_second_entry[4]_AND_82_o1:O)  | NONE(*)(generating_time.second_temp_4_LDC) | 1     |
+flag_set_time_second_entry[3]_AND_84_o(flag_set_time_second_entry[3]_AND_84_o1:O)  | NONE(*)(generating_time.second_temp_3_LDC) | 1     |
+flag_set_time_second_entry[2]_AND_86_o(flag_set_time_second_entry[2]_AND_86_o1:O)  | NONE(*)(generating_time.second_temp_2_LDC) | 1     |
+flag_set_time_second_entry[1]_AND_88_o(flag_set_time_second_entry[1]_AND_88_o1:O)  | NONE(*)(generating_time.second_temp_1_LDC) | 1     |
+flag_set_time_second_entry[0]_AND_90_o(flag_set_time_second_entry[0]_AND_90_o1:O)  | NONE(*)(generating_time.second_temp_0_LDC) | 1     |
+flag_set_time_minute_entry[2]_AND_98_o(flag_set_time_minute_entry[2]_AND_98_o1:O)  | NONE(*)(generating_time.minute_temp_2_LDC) | 1     |
+flag_set_time_minute_entry[4]_AND_94_o(flag_set_time_minute_entry[4]_AND_94_o1:O)  | NONE(*)(generating_time.minute_temp_4_LDC) | 1     |
+flag_set_time_minute_entry[3]_AND_97_o(flag_set_time_minute_entry[3]_AND_97_o1:O)  | NONE(*)(generating_time.minute_temp_3_LDC1)| 1     |
+flag_set_time_minute_entry[1]_AND_101_o(flag_set_time_minute_entry[1]_AND_101_o1:O)| NONE(*)(generating_time.minute_temp_1_LDC1)| 1     |
+flag_set_time_minute_entry[0]_AND_102_o(flag_set_time_minute_entry[0]_AND_102_o1:O)| NONE(*)(generating_time.minute_temp_0_LDC) | 1     |
+flag_set_time_hour_entry[3]_AND_107_o(flag_set_time_hour_entry[3]_AND_107_o1:O)    | NONE(*)(generating_time.hour_temp_3_LDC1)  | 1     |
+flag_set_time_hour_entry[2]_AND_108_o(flag_set_time_hour_entry[2]_AND_108_o1:O)    | NONE(*)(generating_time.hour_temp_2_LDC)   | 1     |
+flag_set_time_hour_entry[1]_AND_111_o(flag_set_time_hour_entry[1]_AND_111_o1:O)    | NONE(*)(generating_time.hour_temp_1_LDC1)  | 1     |
+flag_set_time_hour_entry[0]_AND_112_o(flag_set_time_hour_entry[0]_AND_112_o1:O)    | NONE(*)(generating_time.hour_temp_0_LDC)   | 1     |
+flag_set_time_second_entry[5]_AND_80_o(flag_set_time_second_entry[5]_AND_80_o1:O)  | NONE(*)(generating_time.second_temp_5_LDC) | 1     |
+flag_set_time_minute_entry[5]_AND_92_o(flag_set_time_minute_entry[5]_AND_92_o1:O)  | NONE(*)(generating_time.minute_temp_5_LDC) | 1     |
+flag_set_time_hour_entry[4]_AND_104_o(flag_set_time_hour_entry[4]_AND_104_o1:O)    | NONE(*)(generating_time.hour_temp_4_LDC)   | 1     |
+-----------------------------------------------------------------------------------+--------------------------------------------+-------+
+(*) These 27 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.164ns (Maximum Frequency: 139.584MHz)
+   Minimum input arrival time before clock: 8.983ns
+   Maximum output required time after clock: 3.648ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.556ns (frequency: 219.505MHz)
+  Total number of paths / destination ports: 31 / 11
+-------------------------------------------------------------------------
+Delay:               4.556ns (Levels of Logic = 3)
+  Source:            pr_st_0 (FF)
+  Destination:       pr_st_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: pr_st_0 to pr_st_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              98   0.447   2.093  pr_st_0 (pr_st_0)
+     LUT6:I3->O            2   0.205   0.721  Mmux_nx_st111 (Mmux_nx_st11)
+     LUT6:I4->O            1   0.203   0.580  Mmux_nx_st41 (Mmux_nx_st4)
+     LUT6:I5->O            1   0.205   0.000  Mmux_nx_st42 (nx_st<2>)
+     FD:D                      0.102          pr_st_2
+    ----------------------------------------
+    Total                      4.556ns (1.162ns logic, 3.394ns route)
+                                       (25.5% logic, 74.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pr_st[2]_PWR_106_o_Mux_426_o'
+  Clock period: 5.906ns (frequency: 169.328MHz)
+  Total number of paths / destination ports: 156 / 5
+-------------------------------------------------------------------------
+Delay:               5.906ns (Levels of Logic = 5)
+  Source:            upper_section.hour_entry_temp_2 (LATCH)
+  Destination:       upper_section.hour_entry_temp_1 (LATCH)
+  Source Clock:      pr_st[2]_PWR_106_o_Mux_426_o falling
+  Destination Clock: pr_st[2]_PWR_106_o_Mux_426_o falling
+
+  Data Path: upper_section.hour_entry_temp_2 to upper_section.hour_entry_temp_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               7   0.498   1.002  upper_section.hour_entry_temp_2 (upper_section.hour_entry_temp_2)
+     LUT6:I3->O            3   0.205   0.651  Madd_upper_section.hour_entry_temp[4]_GND_5_o_add_184_OUT_cy<2>11 (Madd_upper_section.hour_entry_temp[4]_GND_5_o_add_184_OUT_cy<2>)
+     LUT4:I3->O            2   0.205   0.864  Madd_upper_section.hour_entry_temp[4]_GND_5_o_add_184_OUT_xor<4>11 (upper_section.hour_entry_temp[4]_GND_5_o_add_184_OUT<4>)
+     LUT6:I2->O           11   0.203   0.987  Mmux_GND_5_o_upper_section.hour_entry_temp[4]_select_194_OUT5 (GND_5_o_upper_section.hour_entry_temp[4]_select_194_OUT<4>)
+     LUT2:I0->O            2   0.203   0.845  PWR_5_o_GND_5_o_LessThan_200_o1 (PWR_5_o_GND_5_o_LessThan_200_o)
+     LUT3:I0->O            1   0.205   0.000  Mmux_pr_st[2]_X_5_o_Mux_439_o111 (pr_st[2]_X_5_o_Mux_439_o)
+     LD:D                      0.037          upper_section.hour_entry_temp_1
+    ----------------------------------------
+    Total                      5.906ns (1.556ns logic, 4.350ns route)
+                                       (26.3% logic, 73.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pr_st[2]_PWR_52_o_Mux_318_o'
+  Clock period: 7.164ns (frequency: 139.584MHz)
+  Total number of paths / destination ports: 25003 / 49
+-------------------------------------------------------------------------
+Delay:               7.164ns (Levels of Logic = 8)
+  Source:            upper_section.d_0 (LATCH)
+  Destination:       second_entry_0 (LATCH)
+  Source Clock:      pr_st[2]_PWR_52_o_Mux_318_o falling
+  Destination Clock: pr_st[2]_PWR_52_o_Mux_318_o falling
+
+  Data Path: upper_section.d_0 to second_entry_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               3   0.498   0.650  upper_section.d_0 (upper_section.d_0)
+     INV:I->O              1   0.206   0.000  Madd_upper_section.d[31]_GND_5_o_add_175_OUT_lut<0>_INV_0 (Madd_upper_section.d[31]_GND_5_o_add_175_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_upper_section.d[31]_GND_5_o_add_175_OUT_cy<0> (Madd_upper_section.d[31]_GND_5_o_add_175_OUT_cy<0>)
+     XORCY:CI->O          52   0.180   1.561  Madd_upper_section.d[31]_GND_5_o_add_175_OUT_xor<1> (upper_section.d[31]_GND_5_o_add_175_OUT<1>)
+     LUT6:I5->O            1   0.205   0.580  Mmux_GND_5_o_GND_5_o_select_192_OUT32 (Mmux_GND_5_o_GND_5_o_select_192_OUT31)
+     LUT6:I5->O            1   0.205   0.580  _n0863<31>7_SW0_F (N212)
+     LUT6:I5->O            9   0.205   1.058  Mmux_GND_5_o_GND_5_o_select_192_OUT33 (GND_5_o_GND_5_o_select_192_OUT<2>)
+     LUT6:I3->O            2   0.205   0.617  PWR_5_o_GND_5_o_LessThan_196_o3 (PWR_5_o_GND_5_o_LessThan_196_o)
+     LUT6:I5->O            1   0.205   0.000  Mmux_pr_st[2]_X_5_o_Mux_403_o15 (pr_st[2]_X_5_o_Mux_413_o)
+     LD:D                      0.037          second_entry_0
+    ----------------------------------------
+    Total                      7.164ns (2.118ns logic, 5.046ns route)
+                                       (29.6% logic, 70.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pr_st[2]_PWR_121_o_Mux_456_o'
+  Clock period: 5.810ns (frequency: 172.130MHz)
+  Total number of paths / destination ports: 287 / 6
+-------------------------------------------------------------------------
+Delay:               5.810ns (Levels of Logic = 5)
+  Source:            upper_section.minute_entry_temp_1 (LATCH)
+  Destination:       upper_section.minute_entry_temp_5 (LATCH)
+  Source Clock:      pr_st[2]_PWR_121_o_Mux_456_o falling
+  Destination Clock: pr_st[2]_PWR_121_o_Mux_456_o falling
+
+  Data Path: upper_section.minute_entry_temp_1 to upper_section.minute_entry_temp_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               7   0.498   0.878  upper_section.minute_entry_temp_1 (upper_section.minute_entry_temp_1)
+     LUT4:I2->O            4   0.203   0.684  Madd_n0559_Madd_cy<2>11 (Madd_n0559_Madd_cy<2>)
+     LUT6:I5->O            4   0.205   0.912  Madd_n0559_Madd_cy<4>11 (Madd_n0559_Madd_cy<4>)
+     LUT6:I3->O            1   0.205   0.924  PWR_5_o_GND_5_o_LessThan_198_o1_SW1 (N168)
+     LUT6:I1->O           10   0.203   0.857  PWR_5_o_GND_5_o_LessThan_198_o2 (PWR_5_o_GND_5_o_LessThan_198_o2)
+     LUT6:I5->O            1   0.205   0.000  Mmux_pr_st[2]_X_5_o_Mux_481_o11 (pr_st[2]_X_5_o_Mux_481_o)
+     LD:D                      0.037          upper_section.minute_entry_temp_0
+    ----------------------------------------
+    Total                      5.810ns (1.556ns logic, 4.254ns route)
+                                       (26.8% logic, 73.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pr_st[2]_PWR_139_o_Mux_492_o'
+  Clock period: 6.493ns (frequency: 154.013MHz)
+  Total number of paths / destination ports: 385 / 6
+-------------------------------------------------------------------------
+Delay:               6.493ns (Levels of Logic = 6)
+  Source:            upper_section.second_entry_temp_1 (LATCH)
+  Destination:       upper_section.second_entry_temp_3 (LATCH)
+  Source Clock:      pr_st[2]_PWR_139_o_Mux_492_o falling
+  Destination Clock: pr_st[2]_PWR_139_o_Mux_492_o falling
+
+  Data Path: upper_section.second_entry_temp_1 to upper_section.second_entry_temp_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               7   0.498   0.878  upper_section.second_entry_temp_1 (upper_section.second_entry_temp_1)
+     LUT4:I2->O            7   0.203   0.774  Madd_upper_section.second_entry_temp[5]_GND_5_o_add_178_OUT_cy<1>11 (Madd_upper_section.second_entry_temp[5]_GND_5_o_add_178_OUT_cy<1>)
+     LUT5:I4->O            5   0.205   0.962  Madd_upper_section.second_entry_temp[5]_GND_5_o_add_178_OUT_cy<3>11 (Madd_upper_section.second_entry_temp[5]_GND_5_o_add_178_OUT_cy<3>)
+     LUT4:I0->O            1   0.203   0.684  Mmux_GND_5_o_GND_5_o_select_192_OUT53 (Mmux_GND_5_o_GND_5_o_select_192_OUT52)
+     LUT6:I4->O            1   0.203   0.580  _n0863<31>7_SW1 (N188)
+     LUT6:I5->O           10   0.205   0.857  Mmux_GND_5_o_GND_5_o_select_192_OUT54 (GND_5_o_GND_5_o_select_192_OUT<4>)
+     LUT6:I5->O            1   0.205   0.000  Mmux_pr_st[2]_X_5_o_Mux_517_o11 (pr_st[2]_X_5_o_Mux_517_o)
+     LD:D                      0.037          upper_section.second_entry_temp_0
+    ----------------------------------------
+    Total                      6.493ns (1.759ns logic, 4.734ns route)
+                                       (27.1% logic, 72.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_div'
+  Clock period: 5.793ns (frequency: 172.610MHz)
+  Total number of paths / destination ports: 1057 / 46
+-------------------------------------------------------------------------
+Delay:               5.793ns (Levels of Logic = 4)
+  Source:            generating_time.hour_temp_3_P_3 (FF)
+  Destination:       generating_time.cnt_alarm_0 (FF)
+  Source Clock:      clk_div rising
+  Destination Clock: clk_div rising
+
+  Data Path: generating_time.hour_temp_3_P_3 to generating_time.cnt_alarm_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.447   0.684  generating_time.hour_temp_3_P_3 (generating_time.hour_temp_3_P_3)
+     LUT3:I1->O           11   0.203   1.111  generating_time.hour_temp_31 (generating_time.hour_temp_3)
+     LUT6:I3->O            1   0.205   0.924  flag_alarm_cancel_PWR_5_o_MUX_30_o6 (flag_alarm_cancel_PWR_5_o_MUX_30_o6)
+     LUT6:I1->O            1   0.203   0.580  flag_alarm_cancel_PWR_5_o_MUX_30_o7 (flag_alarm_cancel_PWR_5_o_MUX_30_o7)
+     LUT6:I5->O            8   0.205   0.802  flag_alarm_cancel_PWR_5_o_MUX_30_o8 (flag_alarm_cancel_PWR_5_o_MUX_30_o)
+     FDCE:CLR                  0.430          generating_time.cnt_alarm_0
+    ----------------------------------------
+    Total                      5.793ns (1.693ns logic, 4.100ns route)
+                                       (29.2% logic, 70.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pr_st[2]_PWR_101_o_Mux_416_o'
+  Total number of paths / destination ports: 15 / 2
+-------------------------------------------------------------------------
+Offset:              4.288ns (Levels of Logic = 3)
+  Source:            key<0> (PAD)
+  Destination:       upper_section.st_s_1 (LATCH)
+  Destination Clock: pr_st[2]_PWR_101_o_Mux_416_o falling
+
+  Data Path: key<0> to upper_section.st_s_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            54   1.222   1.802  key_0_IBUF (key_0_IBUF)
+     LUT4:I1->O            5   0.205   0.819  PWR_5_o_key_int[3]_equal_139_o<3>1 (PWR_5_o_key_int[3]_equal_139_o)
+     LUT5:I3->O            1   0.203   0.000  Mmux_pr_st[2]_X_5_o_Mux_417_o11 (pr_st[2]_X_5_o_Mux_417_o)
+     LD:D                      0.037          upper_section.st_s_1
+    ----------------------------------------
+    Total                      4.288ns (1.667ns logic, 2.621ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 49 / 3
+-------------------------------------------------------------------------
+Offset:              5.996ns (Levels of Logic = 5)
+  Source:            key<2> (PAD)
+  Destination:       pr_st_2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: key<2> to pr_st_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            46   1.222   1.835  key_2_IBUF (Mmult_n0641_Madd_lut<5>)
+     LUT6:I1->O            2   0.203   0.721  GND_5_o_PWR_5_o_AND_26_o7 (GND_5_o_PWR_5_o_AND_26_o)
+     LUT6:I4->O            2   0.203   0.721  Mmux_nx_st111 (Mmux_nx_st11)
+     LUT6:I4->O            1   0.203   0.580  Mmux_nx_st41 (Mmux_nx_st4)
+     LUT6:I5->O            1   0.205   0.000  Mmux_nx_st42 (nx_st<2>)
+     FD:D                      0.102          pr_st_2
+    ----------------------------------------
+    Total                      5.996ns (2.138ns logic, 3.858ns route)
+                                       (35.7% logic, 64.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pr_st[2]_PWR_106_o_Mux_426_o'
+  Total number of paths / destination ports: 177 / 5
+-------------------------------------------------------------------------
+Offset:              7.578ns (Levels of Logic = 6)
+  Source:            key<0> (PAD)
+  Destination:       upper_section.hour_entry_temp_1 (LATCH)
+  Destination Clock: pr_st[2]_PWR_106_o_Mux_426_o falling
+
+  Data Path: key<0> to upper_section.hour_entry_temp_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            54   1.222   1.678  key_0_IBUF (key_0_IBUF)
+     LUT2:I0->O            2   0.203   0.981  Mmult_n0641_Madd_cy<3>11 (Mmult_n0641_Madd_cy<3>)
+     LUT6:I0->O            1   0.203   0.808  Mmux_GND_5_o_upper_section.hour_entry_temp[4]_select_194_OUT5_SW0_SW0 (N160)
+     LUT6:I3->O           11   0.205   0.987  Mmux_GND_5_o_upper_section.hour_entry_temp[4]_select_194_OUT5 (GND_5_o_upper_section.hour_entry_temp[4]_select_194_OUT<4>)
+     LUT2:I0->O            2   0.203   0.845  PWR_5_o_GND_5_o_LessThan_200_o1 (PWR_5_o_GND_5_o_LessThan_200_o)
+     LUT3:I0->O            1   0.205   0.000  Mmux_pr_st[2]_X_5_o_Mux_439_o111 (pr_st[2]_X_5_o_Mux_439_o)
+     LD:D                      0.037          upper_section.hour_entry_temp_1
+    ----------------------------------------
+    Total                      7.578ns (2.278ns logic, 5.300ns route)
+                                       (30.1% logic, 69.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pr_st[2]_PWR_10_o_Mux_234_o'
+  Total number of paths / destination ports: 200 / 41
+-------------------------------------------------------------------------
+Offset:              7.224ns (Levels of Logic = 5)
+  Source:            key<2> (PAD)
+  Destination:       md_6 (LATCH)
+  Destination Clock: pr_st[2]_PWR_10_o_Mux_234_o falling
+
+  Data Path: key<2> to md_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            46   1.222   1.719  key_2_IBUF (Mmult_n0641_Madd_lut<5>)
+     LUT4:I1->O           38   0.205   1.741  PWR_5_o_key_int[3]_equal_58_o<3>1 (PWR_5_o_key_int[3]_equal_58_o)
+     LUT6:I0->O            6   0.203   1.109  Mmux_pr_st[2]_X_5_o_Mux_271_o13 (Mmux_pr_st[2]_X_5_o_Mux_271_o13)
+     LUT6:I0->O            1   0.203   0.580  Mmux_pr_st[2]_X_5_o_Mux_269_o11 (Mmux_pr_st[2]_X_5_o_Mux_269_o1)
+     LUT6:I5->O            1   0.205   0.000  Mmux_pr_st[2]_X_5_o_Mux_269_o12 (pr_st[2]_X_5_o_Mux_269_o)
+     LD:D                      0.037          md_2
+    ----------------------------------------
+    Total                      7.224ns (2.075ns logic, 5.149ns route)
+                                       (28.7% logic, 71.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pr_st[2]_PWR_121_o_Mux_456_o'
+  Total number of paths / destination ports: 362 / 6
+-------------------------------------------------------------------------
+Offset:              7.513ns (Levels of Logic = 6)
+  Source:            key<0> (PAD)
+  Destination:       upper_section.minute_entry_temp_5 (LATCH)
+  Destination Clock: pr_st[2]_PWR_121_o_Mux_456_o falling
+
+  Data Path: key<0> to upper_section.minute_entry_temp_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            54   1.222   1.678  key_0_IBUF (key_0_IBUF)
+     LUT4:I2->O            2   0.203   0.864  Mmult_n0641_Madd_xor<4>11 (n0641<4>)
+     LUT6:I2->O            4   0.203   0.912  Madd_n0559_Madd_cy<4>11 (Madd_n0559_Madd_cy<4>)
+     LUT6:I3->O            1   0.205   0.924  PWR_5_o_GND_5_o_LessThan_198_o1_SW1 (N168)
+     LUT6:I1->O           10   0.203   0.857  PWR_5_o_GND_5_o_LessThan_198_o2 (PWR_5_o_GND_5_o_LessThan_198_o2)
+     LUT6:I5->O            1   0.205   0.000  Mmux_pr_st[2]_X_5_o_Mux_481_o11 (pr_st[2]_X_5_o_Mux_481_o)
+     LD:D                      0.037          upper_section.minute_entry_temp_0
+    ----------------------------------------
+    Total                      7.513ns (2.278ns logic, 5.235ns route)
+                                       (30.3% logic, 69.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pr_st[2]_PWR_139_o_Mux_492_o'
+  Total number of paths / destination ports: 380 / 6
+-------------------------------------------------------------------------
+Offset:              8.161ns (Levels of Logic = 7)
+  Source:            key<0> (PAD)
+  Destination:       upper_section.second_entry_temp_3 (LATCH)
+  Destination Clock: pr_st[2]_PWR_139_o_Mux_492_o falling
+
+  Data Path: key<0> to upper_section.second_entry_temp_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            54   1.222   1.821  key_0_IBUF (key_0_IBUF)
+     LUT4:I0->O            7   0.203   0.774  Madd_upper_section.second_entry_temp[5]_GND_5_o_add_178_OUT_cy<1>11 (Madd_upper_section.second_entry_temp[5]_GND_5_o_add_178_OUT_cy<1>)
+     LUT5:I4->O            5   0.205   0.962  Madd_upper_section.second_entry_temp[5]_GND_5_o_add_178_OUT_cy<3>11 (Madd_upper_section.second_entry_temp[5]_GND_5_o_add_178_OUT_cy<3>)
+     LUT4:I0->O            1   0.203   0.684  Mmux_GND_5_o_GND_5_o_select_192_OUT53 (Mmux_GND_5_o_GND_5_o_select_192_OUT52)
+     LUT6:I4->O            1   0.203   0.580  _n0863<31>7_SW1 (N188)
+     LUT6:I5->O           10   0.205   0.857  Mmux_GND_5_o_GND_5_o_select_192_OUT54 (GND_5_o_GND_5_o_select_192_OUT<4>)
+     LUT6:I5->O            1   0.205   0.000  Mmux_pr_st[2]_X_5_o_Mux_517_o11 (pr_st[2]_X_5_o_Mux_517_o)
+     LD:D                      0.037          upper_section.second_entry_temp_0
+    ----------------------------------------
+    Total                      8.161ns (2.483ns logic, 5.678ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pr_st[2]_PWR_52_o_Mux_318_o'
+  Total number of paths / destination ports: 503 / 17
+-------------------------------------------------------------------------
+Offset:              8.983ns (Levels of Logic = 8)
+  Source:            key<0> (PAD)
+  Destination:       second_entry_0 (LATCH)
+  Destination Clock: pr_st[2]_PWR_52_o_Mux_318_o falling
+
+  Data Path: key<0> to second_entry_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            54   1.222   1.821  key_0_IBUF (key_0_IBUF)
+     LUT4:I0->O            7   0.203   0.774  Madd_upper_section.second_entry_temp[5]_GND_5_o_add_178_OUT_cy<1>11 (Madd_upper_section.second_entry_temp[5]_GND_5_o_add_178_OUT_cy<1>)
+     LUT5:I4->O            5   0.205   0.962  Madd_upper_section.second_entry_temp[5]_GND_5_o_add_178_OUT_cy<3>11 (Madd_upper_section.second_entry_temp[5]_GND_5_o_add_178_OUT_cy<3>)
+     LUT4:I0->O            1   0.203   0.684  Mmux_GND_5_o_GND_5_o_select_192_OUT53 (Mmux_GND_5_o_GND_5_o_select_192_OUT52)
+     LUT6:I4->O            1   0.203   0.580  _n0863<31>7_SW1 (N188)
+     LUT6:I5->O           10   0.205   0.857  Mmux_GND_5_o_GND_5_o_select_192_OUT54 (GND_5_o_GND_5_o_select_192_OUT<4>)
+     LUT6:I5->O            2   0.205   0.617  PWR_5_o_GND_5_o_LessThan_196_o3 (PWR_5_o_GND_5_o_LessThan_196_o)
+     LUT6:I5->O            1   0.205   0.000  Mmux_pr_st[2]_X_5_o_Mux_403_o15 (pr_st[2]_X_5_o_Mux_413_o)
+     LD:D                      0.037          second_entry_0
+    ----------------------------------------
+    Total                      8.983ns (2.688ns logic, 6.295ns route)
+                                       (29.9% logic, 70.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pr_st[2]_PWR_10_o_Mux_234_o'
+  Total number of paths / destination ports: 41 / 41
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            hd_6_1 (LATCH)
+  Destination:       hd<6> (PAD)
+  Source Clock:      pr_st[2]_PWR_10_o_Mux_234_o falling
+
+  Data Path: hd_6_1 to hd<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.579  hd_6_1 (hd_6_1)
+     OBUF:I->O                 2.571          hd_6_OBUF (hd<6>)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'flag_alarm_cancel_PWR_5_o_MUX_30_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            flag_alarm_1 (LATCH)
+  Destination:       alarm (PAD)
+  Source Clock:      flag_alarm_cancel_PWR_5_o_MUX_30_o falling
+
+  Data Path: flag_alarm_1 to alarm
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.579  flag_alarm_1 (flag_alarm_1)
+     OBUF:I->O                 2.571          alarm_OBUF (alarm)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |    4.556|         |         |         |
+pr_st[2]_PWR_101_o_Mux_416_o|         |    2.398|         |         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |    9.773|         |         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_div
+---------------------------------------+---------+---------+---------+---------+
+                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------+---------+---------+---------+---------+
+clk_div                                |    5.793|         |         |         |
+flag_alarm_cancel_PWR_5_o_MUX_30_o     |         |    2.451|         |         |
+flag_set_alarm                         |         |    4.788|         |         |
+flag_set_time_hour_entry[0]_AND_112_o  |         |    4.879|         |         |
+flag_set_time_hour_entry[1]_AND_111_o  |         |    5.887|         |         |
+flag_set_time_hour_entry[2]_AND_108_o  |         |    5.882|         |         |
+flag_set_time_hour_entry[3]_AND_107_o  |         |    5.970|         |         |
+flag_set_time_hour_entry[4]_AND_104_o  |         |    5.762|         |         |
+flag_set_time_minute_entry[0]_AND_102_o|         |    5.827|         |         |
+flag_set_time_minute_entry[1]_AND_101_o|         |    5.888|         |         |
+flag_set_time_minute_entry[2]_AND_98_o |         |    5.927|         |         |
+flag_set_time_minute_entry[3]_AND_97_o |         |    5.726|         |         |
+flag_set_time_minute_entry[4]_AND_94_o |         |    5.843|         |         |
+flag_set_time_minute_entry[5]_AND_92_o |         |    5.590|         |         |
+flag_set_time_second_entry[0]_AND_90_o |         |    5.731|         |         |
+flag_set_time_second_entry[1]_AND_88_o |         |    5.832|         |         |
+flag_set_time_second_entry[2]_AND_86_o |         |    5.716|         |         |
+flag_set_time_second_entry[3]_AND_84_o |         |    5.844|         |         |
+flag_set_time_second_entry[4]_AND_82_o |         |    5.944|         |         |
+flag_set_time_second_entry[5]_AND_80_o |         |    5.924|         |         |
+pr_st[2]_PWR_155_o_Mux_524_o           |         |    3.524|         |         |
+pr_st[2]_PWR_156_o_Mux_526_o           |         |    2.654|         |         |
+pr_st[2]_PWR_52_o_Mux_318_o            |         |    2.754|         |         |
+---------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_alarm_cancel_PWR_5_o_MUX_30_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk_div                     |         |         |    1.649|         |
+pr_st[2]_PWR_156_o_Mux_526_o|         |         |    1.699|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_alarm
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_52_o_Mux_318_o|         |         |    1.539|         |
+---------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_hour_entry[0]_AND_112_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.606|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_hour_entry[1]_AND_111_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.731|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_hour_entry[2]_AND_108_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.606|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_hour_entry[3]_AND_107_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.606|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_hour_entry[4]_AND_104_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.606|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_minute_entry[0]_AND_102_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.606|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_minute_entry[1]_AND_101_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.707|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_minute_entry[2]_AND_98_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.754|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_minute_entry[3]_AND_97_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.606|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_minute_entry[4]_AND_94_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.579|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_minute_entry[5]_AND_92_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.579|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_second_entry[0]_AND_90_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.606|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_second_entry[1]_AND_88_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.754|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_second_entry[2]_AND_86_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.633|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_second_entry[3]_AND_84_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.658|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_second_entry[4]_AND_82_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.658|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag_set_time_second_entry[5]_AND_80_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+pr_st[2]_PWR_155_o_Mux_524_o|         |         |    3.406|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    2.658|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pr_st[2]_PWR_101_o_Mux_416_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.916|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pr_st[2]_PWR_106_o_Mux_426_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |    3.700|         |
+pr_st[2]_PWR_106_o_Mux_426_o|         |         |    5.906|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    7.885|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pr_st[2]_PWR_10_o_Mux_234_o
+---------------------------------------+---------+---------+---------+---------+
+                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------+---------+---------+---------+---------+
+clk                                    |         |         |    6.560|         |
+clk_div                                |         |         |    7.908|         |
+flag_set_time_hour_entry[0]_AND_112_o  |         |         |    3.834|         |
+flag_set_time_hour_entry[1]_AND_111_o  |         |         |    6.096|         |
+flag_set_time_hour_entry[2]_AND_108_o  |         |         |    6.330|         |
+flag_set_time_hour_entry[3]_AND_107_o  |         |         |    7.191|         |
+flag_set_time_hour_entry[4]_AND_104_o  |         |         |    7.293|         |
+flag_set_time_minute_entry[0]_AND_102_o|         |         |    3.982|         |
+flag_set_time_minute_entry[1]_AND_101_o|         |         |    6.016|         |
+flag_set_time_minute_entry[2]_AND_98_o |         |         |    6.163|         |
+flag_set_time_minute_entry[3]_AND_97_o |         |         |    6.021|         |
+flag_set_time_minute_entry[4]_AND_94_o |         |         |    5.766|         |
+flag_set_time_minute_entry[5]_AND_92_o |         |         |    6.084|         |
+flag_set_time_second_entry[0]_AND_90_o |         |         |    3.880|         |
+flag_set_time_second_entry[1]_AND_88_o |         |         |    5.771|         |
+flag_set_time_second_entry[2]_AND_86_o |         |         |    6.853|         |
+flag_set_time_second_entry[3]_AND_84_o |         |         |    7.968|         |
+flag_set_time_second_entry[4]_AND_82_o |         |         |    8.085|         |
+flag_set_time_second_entry[5]_AND_80_o |         |         |    7.820|         |
+pr_st[2]_PWR_52_o_Mux_318_o            |         |         |    5.927|         |
+---------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pr_st[2]_PWR_121_o_Mux_456_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |    2.916|         |
+pr_st[2]_PWR_121_o_Mux_456_o|         |         |    5.810|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    6.960|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pr_st[2]_PWR_139_o_Mux_492_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |    2.916|         |
+pr_st[2]_PWR_139_o_Mux_492_o|         |         |    6.493|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    6.759|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pr_st[2]_PWR_155_o_Mux_524_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.517|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pr_st[2]_PWR_156_o_Mux_526_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.782|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pr_st[2]_PWR_157_o_Mux_528_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.782|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pr_st[2]_PWR_52_o_Mux_318_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |    4.484|         |
+pr_st[2]_PWR_106_o_Mux_426_o|         |         |    4.877|         |
+pr_st[2]_PWR_121_o_Mux_456_o|         |         |    6.055|         |
+pr_st[2]_PWR_139_o_Mux_492_o|         |         |    7.315|         |
+pr_st[2]_PWR_52_o_Mux_318_o |         |         |    7.164|         |
+----------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.31 secs
+ 
+--> 
+
+Total memory usage is 4507660 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  153 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
+

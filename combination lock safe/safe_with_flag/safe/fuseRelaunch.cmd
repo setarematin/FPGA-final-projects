@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/User/Desktop/daneshgah/FPGA/safe/safe/safe_isim_beh.exe" -prj "C:/Users/User/Desktop/daneshgah/FPGA/safe/safe/safe_beh.prj" "work.safe" 

@@ -1,0 +1,105 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml clock.twx clock.ncd -o clock.twr clock.pcf
+
+Design file:              clock.ncd
+Physical constraint file: clock.pcf
+Device,package,speed:     xc6slx4,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.571|         |         |         |
+key<0>         |    3.819|   11.053|         |         |
+key<1>         |    4.161|   15.371|         |         |
+key<2>         |    4.984|   15.371|         |         |
+key<3>         |    4.622|   15.371|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock key<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.953|         |
+key<0>         |         |         |    2.742|    7.052|
+key<1>         |         |         |    2.306|   12.434|
+key<2>         |         |         |    3.811|   12.434|
+key<3>         |         |         |    3.557|   12.434|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock key<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.953|         |
+key<0>         |         |         |    4.164|    7.052|
+key<1>         |         |         |    4.077|   12.434|
+key<2>         |         |         |    5.990|   12.434|
+key<3>         |         |         |    5.736|   12.434|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock key<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.953|         |
+key<0>         |         |         |    2.339|    7.052|
+key<1>         |         |         |    2.252|   12.434|
+key<2>         |         |         |    4.165|   12.434|
+key<3>         |         |         |    3.911|   12.434|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock key<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.953|         |
+key<0>         |         |         |    2.532|    7.052|
+key<1>         |         |         |    2.312|   12.434|
+key<2>         |         |         |    4.274|   12.434|
+key<3>         |         |         |    4.159|   12.434|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Feb 01 13:00:34 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4557 MB
+
+
+

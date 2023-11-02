@@ -1,0 +1,605 @@
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.xst" -ofn "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/calculator/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 

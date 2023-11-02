@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/clock/clock/clock/clock_isim_beh.exe" -prj "C:/Users/User/Desktop/daneshgah/FPGA/project/FPGA_project/clock/clock/clock/clock_beh.prj" "work.clock" 

@@ -1,0 +1,1214 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: calculator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "calculator.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "calculator"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-tqg144
+
+---- Source Options
+Top Module Name                    : calculator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" into library work
+Parsing package <my_pkg>.
+Parsing entity <calculator>.
+Parsing architecture <Behavioral> of entity <calculator>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <calculator> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 89: flag_clr should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 96: st should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 99: flag should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 100: clr_when_set should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 107: a should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 111: flag should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 113: operation should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 114: operation should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 116: b should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 119: b should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 122: b should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 125: a should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 126: b should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 145: flag should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 146: operation should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 147: operation should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 149: b should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 152: b should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 155: b should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 158: a should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 159: b should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 175: flag should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 184: flag should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 185: a should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd" Line 191: flag should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <calculator>.
+    Related source file is "C:\Users\User\Desktop\daneshgah\FPGA\project\FPGA_project\calculator\calculator\calculator.vhd".
+        nod = 5
+        nob = 20
+    Found 42-bit adder for signal <n1036> created at line 107.
+    Found 21-bit adder for signal <b[20]_a[20]_add_14_OUT> created at line 116.
+    Found 21-bit adder for signal <GND_5_o_GND_5_o_add_160_OUT> created at line 207.
+    Found 4-bit adder for signal <n1335> created at line 226.
+    Found 21-bit subtractor for signal <b[20]_a[20]_sub_16_OUT<20:0>> created at line 119.
+    Found 21x5-bit multiplier for signal <a[20]_GND_5_o_MuLt_7_OUT> created at line 1411.
+    Found 21x21-bit multiplier for signal <n1041> created at line 122.
+    Found 16x7-bit Read Only RAM for signal <_n2164>
+    Found 16x7-bit Read Only RAM for signal <_n2166>
+    Found 16x7-bit Read Only RAM for signal <_n2168>
+    Found 16x7-bit Read Only RAM for signal <_n2170>
+    Found 16x7-bit Read Only RAM for signal <_n2172>
+    Found 16x7-bit Read Only RAM for signal <_n2174>
+    Found 21-bit 7-to-1 multiplexer for signal <operation[2]_a[20]_wide_mux_20_OUT> created at line 114.
+    Found 21-bit 7-to-1 multiplexer for signal <operation[2]_a[20]_wide_mux_37_OUT> created at line 147.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <b<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <operation<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <operation<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <operation<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <clr_when_set>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <flag_error>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <st>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<6><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<6><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<6><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<6><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<6><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<6><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<6><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<5><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<5><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<5><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<5><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<5><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<5><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<5><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<4><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<4><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<4><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<4><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<4><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<4><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<4><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<3><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<3><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<3><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<3><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<3><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<3><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<3><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<2><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<2><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<2><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<2><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<2><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<2><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<2><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 5-bit comparator greater for signal <n0010> created at line 111
+    Found 5-bit comparator lessequal for signal <n0012> created at line 111
+    Found 21-bit comparator greater for signal <GND_5_o_INV_1388_o> created at line 211
+    Found 21-bit comparator greater for signal <GND_5_o_INV_1389_o> created at line 211
+    Found 21-bit comparator greater for signal <GND_5_o_INV_1390_o> created at line 211
+    Found 21-bit comparator greater for signal <GND_5_o_INV_1391_o> created at line 211
+    Found 3-bit comparator greater for signal <GND_5_o_INV_4386_o> created at line 220
+    Found 21-bit comparator lessequal for signal <n0311> created at line 223
+    Found 4-bit comparator greater for signal <BUS_0015_GND_5_o_LessThan_249_o> created at line 228
+    Found 3-bit comparator lessequal for signal <n0347> created at line 220
+    Found 4-bit comparator greater for signal <BUS_0020_GND_5_o_LessThan_313_o> created at line 228
+    Found 3-bit comparator lessequal for signal <n0402> created at line 220
+    Found 4-bit comparator greater for signal <BUS_0025_GND_5_o_LessThan_377_o> created at line 228
+    Found 3-bit comparator lessequal for signal <n0457> created at line 220
+    Found 4-bit comparator greater for signal <BUS_0030_GND_5_o_LessThan_441_o> created at line 228
+    Found 3-bit comparator lessequal for signal <n0512> created at line 220
+    Found 4-bit comparator greater for signal <BUS_0035_GND_5_o_LessThan_505_o> created at line 228
+    Summary:
+	inferred   6 RAM(s).
+	inferred   2 Multiplier(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  83 Latch(s).
+	inferred  17 Comparator(s).
+	inferred 913 Multiplexer(s).
+Unit <calculator> synthesized.
+
+Synthesizing Unit <div_21s_21s>.
+    Related source file is "".
+    Found 21-bit subtractor for signal <a[20]_unary_minus_1_OUT> created at line 0.
+    Found 21-bit subtractor for signal <b[20]_unary_minus_3_OUT> created at line 0.
+    Found 42-bit adder for signal <n1622> created at line 0.
+    Found 42-bit adder for signal <GND_8_o_b[20]_add_5_OUT> created at line 0.
+    Found 41-bit adder for signal <n1626> created at line 0.
+    Found 41-bit adder for signal <GND_8_o_b[20]_add_7_OUT> created at line 0.
+    Found 40-bit adder for signal <n1630> created at line 0.
+    Found 40-bit adder for signal <GND_8_o_b[20]_add_9_OUT> created at line 0.
+    Found 39-bit adder for signal <n1634> created at line 0.
+    Found 39-bit adder for signal <GND_8_o_b[20]_add_11_OUT> created at line 0.
+    Found 38-bit adder for signal <n1638> created at line 0.
+    Found 38-bit adder for signal <GND_8_o_b[20]_add_13_OUT> created at line 0.
+    Found 37-bit adder for signal <n1642> created at line 0.
+    Found 37-bit adder for signal <GND_8_o_b[20]_add_15_OUT> created at line 0.
+    Found 36-bit adder for signal <n1646> created at line 0.
+    Found 36-bit adder for signal <GND_8_o_b[20]_add_17_OUT> created at line 0.
+    Found 35-bit adder for signal <n1650> created at line 0.
+    Found 35-bit adder for signal <GND_8_o_b[20]_add_19_OUT> created at line 0.
+    Found 34-bit adder for signal <n1654> created at line 0.
+    Found 34-bit adder for signal <GND_8_o_b[20]_add_21_OUT> created at line 0.
+    Found 33-bit adder for signal <n1658> created at line 0.
+    Found 33-bit adder for signal <GND_8_o_b[20]_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <n1662> created at line 0.
+    Found 32-bit adder for signal <GND_8_o_b[20]_add_25_OUT> created at line 0.
+    Found 31-bit adder for signal <n1666> created at line 0.
+    Found 31-bit adder for signal <GND_8_o_b[20]_add_27_OUT> created at line 0.
+    Found 30-bit adder for signal <n1670> created at line 0.
+    Found 30-bit adder for signal <GND_8_o_b[20]_add_29_OUT> created at line 0.
+    Found 29-bit adder for signal <n1674> created at line 0.
+    Found 29-bit adder for signal <GND_8_o_b[20]_add_31_OUT> created at line 0.
+    Found 28-bit adder for signal <n1678> created at line 0.
+    Found 28-bit adder for signal <GND_8_o_b[20]_add_33_OUT> created at line 0.
+    Found 27-bit adder for signal <n1682> created at line 0.
+    Found 27-bit adder for signal <GND_8_o_b[20]_add_35_OUT> created at line 0.
+    Found 26-bit adder for signal <n1686> created at line 0.
+    Found 26-bit adder for signal <GND_8_o_b[20]_add_37_OUT> created at line 0.
+    Found 25-bit adder for signal <n1690> created at line 0.
+    Found 25-bit adder for signal <GND_8_o_b[20]_add_39_OUT> created at line 0.
+    Found 24-bit adder for signal <n1694> created at line 0.
+    Found 24-bit adder for signal <GND_8_o_b[20]_add_41_OUT> created at line 0.
+    Found 23-bit adder for signal <n1698> created at line 0.
+    Found 23-bit adder for signal <GND_8_o_b[20]_add_43_OUT> created at line 0.
+    Found 22-bit adder for signal <n1702> created at line 0.
+    Found 22-bit adder for signal <GND_8_o_b[20]_add_45_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_8_o_BUS_0001_add_48_OUT[21:0]> created at line 0.
+    Found 42-bit comparator greater for signal <BUS_0001_INV_868_o> created at line 0
+    Found 41-bit comparator greater for signal <BUS_0002_INV_867_o> created at line 0
+    Found 40-bit comparator greater for signal <BUS_0003_INV_866_o> created at line 0
+    Found 39-bit comparator greater for signal <BUS_0004_INV_865_o> created at line 0
+    Found 38-bit comparator greater for signal <BUS_0005_INV_864_o> created at line 0
+    Found 37-bit comparator greater for signal <BUS_0006_INV_863_o> created at line 0
+    Found 36-bit comparator greater for signal <BUS_0007_INV_862_o> created at line 0
+    Found 35-bit comparator greater for signal <BUS_0008_INV_861_o> created at line 0
+    Found 34-bit comparator greater for signal <BUS_0009_INV_860_o> created at line 0
+    Found 33-bit comparator greater for signal <BUS_0010_INV_859_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0011_INV_858_o> created at line 0
+    Found 31-bit comparator greater for signal <BUS_0012_INV_857_o> created at line 0
+    Found 30-bit comparator greater for signal <BUS_0013_INV_856_o> created at line 0
+    Found 29-bit comparator greater for signal <BUS_0014_INV_855_o> created at line 0
+    Found 28-bit comparator greater for signal <BUS_0015_INV_854_o> created at line 0
+    Found 27-bit comparator greater for signal <BUS_0016_INV_853_o> created at line 0
+    Found 26-bit comparator greater for signal <BUS_0017_INV_852_o> created at line 0
+    Found 25-bit comparator greater for signal <BUS_0018_INV_851_o> created at line 0
+    Found 24-bit comparator greater for signal <BUS_0019_INV_850_o> created at line 0
+    Found 23-bit comparator greater for signal <BUS_0020_INV_849_o> created at line 0
+    Found 22-bit comparator greater for signal <BUS_0021_INV_848_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0022_INV_847_o> created at line 0
+    Summary:
+	inferred  45 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred 424 Multiplexer(s).
+Unit <div_21s_21s> synthesized.
+
+Synthesizing Unit <mod_21s_5s>.
+    Related source file is "".
+    Found 21-bit subtractor for signal <a[20]_unary_minus_1_OUT> created at line 0.
+    Found 5-bit subtractor for signal <b[4]_unary_minus_3_OUT> created at line 0.
+    Found 26-bit adder for signal <n1173> created at line 0.
+    Found 26-bit adder for signal <GND_58_o_b[4]_add_5_OUT> created at line 0.
+    Found 25-bit adder for signal <n1177> created at line 0.
+    Found 25-bit adder for signal <GND_58_o_b[4]_add_7_OUT> created at line 0.
+    Found 24-bit adder for signal <n1181> created at line 0.
+    Found 24-bit adder for signal <GND_58_o_b[4]_add_9_OUT> created at line 0.
+    Found 23-bit adder for signal <n1185> created at line 0.
+    Found 23-bit adder for signal <GND_58_o_b[4]_add_11_OUT> created at line 0.
+    Found 22-bit adder for signal <n1189> created at line 0.
+    Found 22-bit adder for signal <GND_58_o_b[4]_add_13_OUT> created at line 0.
+    Found 21-bit adder for signal <n1193> created at line 0.
+    Found 21-bit adder for signal <a[20]_b[4]_add_15_OUT> created at line 0.
+    Found 21-bit adder for signal <n1197> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_17_OUT> created at line 0.
+    Found 21-bit adder for signal <n1201> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_19_OUT> created at line 0.
+    Found 21-bit adder for signal <n1205> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_21_OUT> created at line 0.
+    Found 21-bit adder for signal <n1209> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_23_OUT> created at line 0.
+    Found 21-bit adder for signal <n1213> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_25_OUT> created at line 0.
+    Found 21-bit adder for signal <n1217> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_27_OUT> created at line 0.
+    Found 21-bit adder for signal <n1221> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_29_OUT> created at line 0.
+    Found 21-bit adder for signal <n1225> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_31_OUT> created at line 0.
+    Found 21-bit adder for signal <n1229> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_33_OUT> created at line 0.
+    Found 21-bit adder for signal <n1233> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_35_OUT> created at line 0.
+    Found 21-bit adder for signal <n1237> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_37_OUT> created at line 0.
+    Found 21-bit adder for signal <n1241> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_39_OUT> created at line 0.
+    Found 21-bit adder for signal <n1245> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_41_OUT> created at line 0.
+    Found 21-bit adder for signal <n1249> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_43_OUT> created at line 0.
+    Found 21-bit adder for signal <n1253> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_45_OUT> created at line 0.
+    Found 21-bit adder for signal <n1257> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_58_o_add_47_OUT> created at line 0.
+    Found 5-bit adder for signal <n1261> created at line 0.
+    Found 5-bit adder for signal <b[4]_a[20]_add_49_OUT> created at line 0.
+    Found 5-bit adder for signal <GND_58_o_a[20]_add_50_OUT[4:0]> created at line 0.
+    Found 26-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Summary:
+	inferred  49 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred 454 Multiplexer(s).
+Unit <mod_21s_5s> synthesized.
+
+Synthesizing Unit <div_21s_5s>.
+    Related source file is "".
+    Found 21-bit subtractor for signal <a[20]_unary_minus_1_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_60_o_BUS_0001_add_48_OUT[21:0]> created at line 0.
+    Found 26-bit adder for signal <GND_60_o_b[4]_add_5_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_60_o_b[4]_add_7_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_60_o_b[4]_add_9_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_60_o_b[4]_add_11_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_60_o_b[4]_add_13_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_b[4]_add_15_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_17_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_19_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_21_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_23_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_25_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_27_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_29_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_31_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_33_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_35_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_37_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_39_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_41_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_43_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_60_o_add_45_OUT[20:0]> created at line 0.
+    Found 26-bit comparator greater for signal <BUS_0001_INV_1912_o> created at line 0
+    Found 25-bit comparator greater for signal <BUS_0002_INV_1911_o> created at line 0
+    Found 24-bit comparator greater for signal <BUS_0003_INV_1910_o> created at line 0
+    Found 23-bit comparator greater for signal <BUS_0004_INV_1909_o> created at line 0
+    Found 22-bit comparator greater for signal <BUS_0005_INV_1908_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0006_INV_1907_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0007_INV_1906_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0008_INV_1905_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0009_INV_1904_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0010_INV_1903_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0011_INV_1902_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0012_INV_1901_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0013_INV_1900_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0014_INV_1899_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0015_INV_1898_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0016_INV_1897_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0017_INV_1896_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0018_INV_1895_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0019_INV_1894_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0020_INV_1893_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0021_INV_1892_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0022_INV_1891_o> created at line 0
+    Summary:
+	inferred  23 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred 383 Multiplexer(s).
+Unit <div_21s_5s> synthesized.
+
+Synthesizing Unit <div_21s_8s>.
+    Related source file is "".
+    Found 21-bit subtractor for signal <a[20]_unary_minus_1_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_61_o_BUS_0001_add_48_OUT[21:0]> created at line 0.
+    Found 29-bit adder for signal <GND_61_o_b[7]_add_5_OUT> created at line 0.
+    Found 28-bit adder for signal <GND_61_o_b[7]_add_7_OUT> created at line 0.
+    Found 27-bit adder for signal <GND_61_o_b[7]_add_9_OUT> created at line 0.
+    Found 26-bit adder for signal <GND_61_o_b[7]_add_11_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_61_o_b[7]_add_13_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_61_o_b[7]_add_15_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_61_o_b[7]_add_17_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_61_o_b[7]_add_19_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_b[7]_add_21_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_61_o_add_23_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_61_o_add_25_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_61_o_add_27_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_61_o_add_29_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_61_o_add_31_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_61_o_add_33_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_61_o_add_35_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_61_o_add_37_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_61_o_add_39_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_61_o_add_41_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_61_o_add_43_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_61_o_add_45_OUT[20:0]> created at line 0.
+    Found 29-bit comparator greater for signal <BUS_0001_INV_2466_o> created at line 0
+    Found 28-bit comparator greater for signal <BUS_0002_INV_2465_o> created at line 0
+    Found 27-bit comparator greater for signal <BUS_0003_INV_2464_o> created at line 0
+    Found 26-bit comparator greater for signal <BUS_0004_INV_2463_o> created at line 0
+    Found 25-bit comparator greater for signal <BUS_0005_INV_2462_o> created at line 0
+    Found 24-bit comparator greater for signal <BUS_0006_INV_2461_o> created at line 0
+    Found 23-bit comparator greater for signal <BUS_0007_INV_2460_o> created at line 0
+    Found 22-bit comparator greater for signal <BUS_0008_INV_2459_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0009_INV_2458_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0010_INV_2457_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0011_INV_2456_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0012_INV_2455_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0013_INV_2454_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0014_INV_2453_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0015_INV_2452_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0016_INV_2451_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0017_INV_2450_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0018_INV_2449_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0019_INV_2448_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0020_INV_2447_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0021_INV_2446_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0022_INV_2445_o> created at line 0
+    Summary:
+	inferred  23 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred 383 Multiplexer(s).
+Unit <div_21s_8s> synthesized.
+
+Synthesizing Unit <div_21s_11s>.
+    Related source file is "".
+    Found 21-bit subtractor for signal <a[20]_unary_minus_1_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_63_o_BUS_0001_add_48_OUT[21:0]> created at line 0.
+    Found 32-bit adder for signal <GND_63_o_b[10]_add_5_OUT> created at line 0.
+    Found 31-bit adder for signal <GND_63_o_b[10]_add_7_OUT> created at line 0.
+    Found 30-bit adder for signal <GND_63_o_b[10]_add_9_OUT> created at line 0.
+    Found 29-bit adder for signal <GND_63_o_b[10]_add_11_OUT> created at line 0.
+    Found 28-bit adder for signal <GND_63_o_b[10]_add_13_OUT> created at line 0.
+    Found 27-bit adder for signal <GND_63_o_b[10]_add_15_OUT> created at line 0.
+    Found 26-bit adder for signal <GND_63_o_b[10]_add_17_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_63_o_b[10]_add_19_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_63_o_b[10]_add_21_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_63_o_b[10]_add_23_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_63_o_b[10]_add_25_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_b[10]_add_27_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_63_o_add_29_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_63_o_add_31_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_63_o_add_33_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_63_o_add_35_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_63_o_add_37_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_63_o_add_39_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_63_o_add_41_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_63_o_add_43_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_63_o_add_45_OUT[20:0]> created at line 0.
+    Found 32-bit comparator greater for signal <BUS_0001_INV_3049_o> created at line 0
+    Found 31-bit comparator greater for signal <BUS_0002_INV_3048_o> created at line 0
+    Found 30-bit comparator greater for signal <BUS_0003_INV_3047_o> created at line 0
+    Found 29-bit comparator greater for signal <BUS_0004_INV_3046_o> created at line 0
+    Found 28-bit comparator greater for signal <BUS_0005_INV_3045_o> created at line 0
+    Found 27-bit comparator greater for signal <BUS_0006_INV_3044_o> created at line 0
+    Found 26-bit comparator greater for signal <BUS_0007_INV_3043_o> created at line 0
+    Found 25-bit comparator greater for signal <BUS_0008_INV_3042_o> created at line 0
+    Found 24-bit comparator greater for signal <BUS_0009_INV_3041_o> created at line 0
+    Found 23-bit comparator greater for signal <BUS_0010_INV_3040_o> created at line 0
+    Found 22-bit comparator greater for signal <BUS_0011_INV_3039_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0012_INV_3038_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0013_INV_3037_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0014_INV_3036_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0015_INV_3035_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0016_INV_3034_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0017_INV_3033_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0018_INV_3032_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0019_INV_3031_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0020_INV_3030_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0021_INV_3029_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0022_INV_3028_o> created at line 0
+    Summary:
+	inferred  23 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred 383 Multiplexer(s).
+Unit <div_21s_11s> synthesized.
+
+Synthesizing Unit <div_21s_15s>.
+    Related source file is "".
+    Found 21-bit subtractor for signal <a[20]_unary_minus_1_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_65_o_BUS_0001_add_48_OUT[21:0]> created at line 0.
+    Found 36-bit adder for signal <GND_65_o_b[14]_add_5_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_65_o_b[14]_add_7_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_65_o_b[14]_add_9_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_65_o_b[14]_add_11_OUT> created at line 0.
+    Found 32-bit adder for signal <GND_65_o_b[14]_add_13_OUT> created at line 0.
+    Found 31-bit adder for signal <GND_65_o_b[14]_add_15_OUT> created at line 0.
+    Found 30-bit adder for signal <GND_65_o_b[14]_add_17_OUT> created at line 0.
+    Found 29-bit adder for signal <GND_65_o_b[14]_add_19_OUT> created at line 0.
+    Found 28-bit adder for signal <GND_65_o_b[14]_add_21_OUT> created at line 0.
+    Found 27-bit adder for signal <GND_65_o_b[14]_add_23_OUT> created at line 0.
+    Found 26-bit adder for signal <GND_65_o_b[14]_add_25_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_65_o_b[14]_add_27_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_65_o_b[14]_add_29_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_65_o_b[14]_add_31_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_65_o_b[14]_add_33_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_b[14]_add_35_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_65_o_add_37_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_65_o_add_39_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_65_o_add_41_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_65_o_add_43_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_65_o_add_45_OUT[20:0]> created at line 0.
+    Found 36-bit comparator greater for signal <BUS_0001_INV_3690_o> created at line 0
+    Found 35-bit comparator greater for signal <BUS_0002_INV_3689_o> created at line 0
+    Found 34-bit comparator greater for signal <BUS_0003_INV_3688_o> created at line 0
+    Found 33-bit comparator greater for signal <BUS_0004_INV_3687_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0005_INV_3686_o> created at line 0
+    Found 31-bit comparator greater for signal <BUS_0006_INV_3685_o> created at line 0
+    Found 30-bit comparator greater for signal <BUS_0007_INV_3684_o> created at line 0
+    Found 29-bit comparator greater for signal <BUS_0008_INV_3683_o> created at line 0
+    Found 28-bit comparator greater for signal <BUS_0009_INV_3682_o> created at line 0
+    Found 27-bit comparator greater for signal <BUS_0010_INV_3681_o> created at line 0
+    Found 26-bit comparator greater for signal <BUS_0011_INV_3680_o> created at line 0
+    Found 25-bit comparator greater for signal <BUS_0012_INV_3679_o> created at line 0
+    Found 24-bit comparator greater for signal <BUS_0013_INV_3678_o> created at line 0
+    Found 23-bit comparator greater for signal <BUS_0014_INV_3677_o> created at line 0
+    Found 22-bit comparator greater for signal <BUS_0015_INV_3676_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0016_INV_3675_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0017_INV_3674_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0018_INV_3673_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0019_INV_3672_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0020_INV_3671_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0021_INV_3670_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0022_INV_3669_o> created at line 0
+    Summary:
+	inferred  23 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred 383 Multiplexer(s).
+Unit <div_21s_15s> synthesized.
+
+Synthesizing Unit <div_21s_18s>.
+    Related source file is "".
+    Found 21-bit subtractor for signal <a[20]_unary_minus_1_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_67_o_BUS_0001_add_48_OUT[21:0]> created at line 0.
+    Found 39-bit adder for signal <GND_67_o_b[17]_add_5_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_67_o_b[17]_add_7_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_67_o_b[17]_add_9_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_67_o_b[17]_add_11_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_67_o_b[17]_add_13_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_67_o_b[17]_add_15_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_67_o_b[17]_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <GND_67_o_b[17]_add_19_OUT> created at line 0.
+    Found 31-bit adder for signal <GND_67_o_b[17]_add_21_OUT> created at line 0.
+    Found 30-bit adder for signal <GND_67_o_b[17]_add_23_OUT> created at line 0.
+    Found 29-bit adder for signal <GND_67_o_b[17]_add_25_OUT> created at line 0.
+    Found 28-bit adder for signal <GND_67_o_b[17]_add_27_OUT> created at line 0.
+    Found 27-bit adder for signal <GND_67_o_b[17]_add_29_OUT> created at line 0.
+    Found 26-bit adder for signal <GND_67_o_b[17]_add_31_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_67_o_b[17]_add_33_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_67_o_b[17]_add_35_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_67_o_b[17]_add_37_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_67_o_b[17]_add_39_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_b[17]_add_41_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_67_o_add_43_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_67_o_add_45_OUT[20:0]> created at line 0.
+    Found 39-bit comparator greater for signal <BUS_0001_INV_4385_o> created at line 0
+    Found 38-bit comparator greater for signal <BUS_0002_INV_4384_o> created at line 0
+    Found 37-bit comparator greater for signal <BUS_0003_INV_4383_o> created at line 0
+    Found 36-bit comparator greater for signal <BUS_0004_INV_4382_o> created at line 0
+    Found 35-bit comparator greater for signal <BUS_0005_INV_4381_o> created at line 0
+    Found 34-bit comparator greater for signal <BUS_0006_INV_4380_o> created at line 0
+    Found 33-bit comparator greater for signal <BUS_0007_INV_4379_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0008_INV_4378_o> created at line 0
+    Found 31-bit comparator greater for signal <BUS_0009_INV_4377_o> created at line 0
+    Found 30-bit comparator greater for signal <BUS_0010_INV_4376_o> created at line 0
+    Found 29-bit comparator greater for signal <BUS_0011_INV_4375_o> created at line 0
+    Found 28-bit comparator greater for signal <BUS_0012_INV_4374_o> created at line 0
+    Found 27-bit comparator greater for signal <BUS_0013_INV_4373_o> created at line 0
+    Found 26-bit comparator greater for signal <BUS_0014_INV_4372_o> created at line 0
+    Found 25-bit comparator greater for signal <BUS_0015_INV_4371_o> created at line 0
+    Found 24-bit comparator greater for signal <BUS_0016_INV_4370_o> created at line 0
+    Found 23-bit comparator greater for signal <BUS_0017_INV_4369_o> created at line 0
+    Found 22-bit comparator greater for signal <BUS_0018_INV_4368_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0019_INV_4367_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0020_INV_4366_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0021_INV_4365_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0022_INV_4364_o> created at line 0
+    Summary:
+	inferred  23 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred 383 Multiplexer(s).
+Unit <div_21s_18s> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 6
+ 16x7-bit single-port Read Only RAM                    : 6
+# Multipliers                                          : 2
+ 21x21-bit multiplier                                  : 1
+ 21x5-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 459
+ 21-bit adder                                          : 254
+ 21-bit subtractor                                     : 14
+ 22-bit adder                                          : 25
+ 23-bit adder                                          : 19
+ 24-bit adder                                          : 19
+ 25-bit adder                                          : 19
+ 26-bit adder                                          : 19
+ 27-bit adder                                          : 6
+ 28-bit adder                                          : 6
+ 29-bit adder                                          : 6
+ 30-bit adder                                          : 5
+ 31-bit adder                                          : 5
+ 32-bit adder                                          : 5
+ 33-bit adder                                          : 4
+ 34-bit adder                                          : 4
+ 35-bit adder                                          : 4
+ 36-bit adder                                          : 4
+ 37-bit adder                                          : 3
+ 38-bit adder                                          : 3
+ 39-bit adder                                          : 3
+ 4-bit adder                                           : 1
+ 40-bit adder                                          : 2
+ 41-bit adder                                          : 2
+ 42-bit adder                                          : 3
+ 5-bit adder                                           : 18
+ 5-bit subtractor                                      : 6
+# Latches                                              : 83
+ 1-bit latch                                           : 83
+# Comparators                                          : 281
+ 21-bit comparator greater                             : 58
+ 21-bit comparator lessequal                           : 103
+ 22-bit comparator greater                             : 6
+ 22-bit comparator lessequal                           : 6
+ 23-bit comparator greater                             : 6
+ 23-bit comparator lessequal                           : 6
+ 24-bit comparator greater                             : 6
+ 24-bit comparator lessequal                           : 6
+ 25-bit comparator greater                             : 6
+ 25-bit comparator lessequal                           : 6
+ 26-bit comparator greater                             : 6
+ 26-bit comparator lessequal                           : 6
+ 27-bit comparator greater                             : 5
+ 28-bit comparator greater                             : 5
+ 29-bit comparator greater                             : 5
+ 3-bit comparator greater                              : 1
+ 3-bit comparator lessequal                            : 4
+ 30-bit comparator greater                             : 4
+ 31-bit comparator greater                             : 4
+ 32-bit comparator greater                             : 4
+ 33-bit comparator greater                             : 3
+ 34-bit comparator greater                             : 3
+ 35-bit comparator greater                             : 3
+ 36-bit comparator greater                             : 3
+ 37-bit comparator greater                             : 2
+ 38-bit comparator greater                             : 2
+ 39-bit comparator greater                             : 2
+ 4-bit comparator greater                              : 5
+ 40-bit comparator greater                             : 1
+ 41-bit comparator greater                             : 1
+ 42-bit comparator greater                             : 1
+ 5-bit comparator greater                              : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 5976
+ 1-bit 2-to-1 multiplexer                              : 5844
+ 2-bit 2-to-1 multiplexer                              : 1
+ 21-bit 2-to-1 multiplexer                             : 35
+ 21-bit 7-to-1 multiplexer                             : 2
+ 22-bit 2-to-1 multiplexer                             : 6
+ 3-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 12
+ 7-bit 2-to-1 multiplexer                              : 74
+# Xors                                                 : 32
+ 1-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <calculator>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n2164> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <_n1458<1:4>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n2166> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <_n1449<1:4>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n2168> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <_n1494<1:4>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n2170> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <_n1443<1:4>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n2172> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <_n1461<1:4>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n2174> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <_n1497<1:4>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <calculator> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 6
+ 16x7-bit single-port distributed Read Only RAM        : 6
+# Multipliers                                          : 2
+ 21x21-bit multiplier                                  : 1
+ 21x5-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 300
+ 21-bit adder                                          : 108
+ 21-bit adder carry in                                 : 147
+ 21-bit subtractor                                     : 14
+ 22-bit adder                                          : 6
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 6
+ 5-bit adder carry in                                  : 12
+ 5-bit subtractor                                      : 6
+# Comparators                                          : 281
+ 21-bit comparator greater                             : 58
+ 21-bit comparator lessequal                           : 103
+ 22-bit comparator greater                             : 6
+ 22-bit comparator lessequal                           : 6
+ 23-bit comparator greater                             : 6
+ 23-bit comparator lessequal                           : 6
+ 24-bit comparator greater                             : 6
+ 24-bit comparator lessequal                           : 6
+ 25-bit comparator greater                             : 6
+ 25-bit comparator lessequal                           : 6
+ 26-bit comparator greater                             : 6
+ 26-bit comparator lessequal                           : 6
+ 27-bit comparator greater                             : 5
+ 28-bit comparator greater                             : 5
+ 29-bit comparator greater                             : 5
+ 3-bit comparator greater                              : 1
+ 3-bit comparator lessequal                            : 4
+ 30-bit comparator greater                             : 4
+ 31-bit comparator greater                             : 4
+ 32-bit comparator greater                             : 4
+ 33-bit comparator greater                             : 3
+ 34-bit comparator greater                             : 3
+ 35-bit comparator greater                             : 3
+ 36-bit comparator greater                             : 3
+ 37-bit comparator greater                             : 2
+ 38-bit comparator greater                             : 2
+ 39-bit comparator greater                             : 2
+ 4-bit comparator greater                              : 5
+ 40-bit comparator greater                             : 1
+ 41-bit comparator greater                             : 1
+ 42-bit comparator greater                             : 1
+ 5-bit comparator greater                              : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 5976
+ 1-bit 2-to-1 multiplexer                              : 5844
+ 2-bit 2-to-1 multiplexer                              : 1
+ 21-bit 2-to-1 multiplexer                             : 35
+ 21-bit 7-to-1 multiplexer                             : 2
+ 22-bit 2-to-1 multiplexer                             : 6
+ 3-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 12
+ 7-bit 2-to-1 multiplexer                              : 74
+# Xors                                                 : 32
+ 1-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <Mmult_n10413> of sequential type is unconnected in block <calculator>.
+
+Optimizing unit <calculator> ...
+WARNING:Xst:1293 - FF/Latch <a_6> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_4> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_20> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_18> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_20> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_19> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_15> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_17> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_16> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_12> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_14> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_13> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_9> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_11> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_10> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_6> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_8> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_7> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_3> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_5> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_4> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <st> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <b_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clr_when_set> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <flag_error> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_3> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_17> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_19> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_18> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_14> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_16> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_15> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_11> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_13> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_12> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_8> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_10> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_9> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_5> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_7> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_3> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_4> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_5> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_4> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_5> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_6> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_6> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_6> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_6> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_6> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <operation_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <operation_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <operation_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_5> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_4> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_3> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_3> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_4> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_5> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_4> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_5> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_3> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_3> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2973 - All outputs of instance <b[20]_a[20]_div_18> of block <div_21s_21s> are unconnected in block <calculator>. Underlying logic will be removed.
+WARNING:Xst:2677 - Node <Mmult_n1041> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <Mmult_n10411> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <Mmult_n10412> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <Mmult_a[20]_GND_5_o_MuLt_7_OUT> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <Mmult_a[20]_GND_5_o_MuLt_7_OUT1> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:1293 - FF/Latch <a_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_20> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_4> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_6> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_7> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_5> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_9> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_10> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_8> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_12> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <st> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <flag_error> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_3> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_17> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_19> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_18> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_14> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_16> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_15> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_11> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <a_13> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_5> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_4> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_3> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_0> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_6> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_6> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_6> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_6> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<3>_6> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_5> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_4> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_3> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<6>_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_3> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_4> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<5>_5> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_4> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_5> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_1> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_3> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<4>_2> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_3> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_5> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <op<2>_4> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <operation_1> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <operation_2> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <operation_0> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_0> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_1> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_18> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_20> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_19> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_15> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_17> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_16> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_12> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_14> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_13> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_9> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_11> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_10> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_6> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_8> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_7> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_3> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_5> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_4> of sequential type is unconnected in block <calculator>.
+WARNING:Xst:2677 - Node <b_2> of sequential type is unconnected in block <calculator>.
+
+Optimizing unit <div_21s_21s> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block calculator, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : calculator.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# IO Buffers                       : 42
+#      OBUF                        : 42
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          47
+ Number of bonded IOBs:                  42  out of    102    41%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 40.00 secs
+Total CPU time to Xst completion: 39.73 secs
+ 
+--> 
+
+Total memory usage is 4595852 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  280 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+
